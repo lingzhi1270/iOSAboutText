@@ -1,0 +1,374 @@
+
+        <html xmlns:v="urn:schemas-microsoft-com:vml"
+        xmlns:o="urn:schemas-microsoft-com:office:office"
+        xmlns:w="urn:schemas-microsoft-com:office:word"
+        xmlns="http://www.w3.org/TR/REC-html40">
+        <head><meta http-equiv=Content-Type content="text/html;  
+        charset=utf-8">
+        <meta name=ProgId content=Word.Document>
+        <meta name=Generator content="Microsoft Word 11">
+        <meta name=Originator content="Microsoft Word 11">
+        <xml><w:WordDocument><w:View>Print</w:View></xml></head>
+        <body><h1>1、文档说明</h1><div style="margin-left:20px;"></div><h1>2、文档修改历史</h1><div style="margin-left:20px;"><ol>
+<li>2016年9月18日，新建文档。</li>
+</ol></div><h1>3、版本信息</h1><div style="margin-left:20px;"><table>
+<thead>
+<tr>
+<th>版本</th>
+<th>作者</th>
+<th>参与者</th>
+<th>起止日期</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0</td>
+<td>井波</td>
+<td></td>
+<td>2016年9月18日-</td>
+<td>文档建立</td>
+</tr>
+</tbody>
+</table></div><h1>4、错误码</h1><div style="margin-left:20px;"></div><h1>5、数据接口</h1><div style="margin-left:20px;"><h2>5.1、注册</h2><div style="margin-left:20px;"><p><strong>简要描述：</strong> </p>
+<ul>
+<li>用户注册接口</li>
+</ul>
+<p><strong>请求URL：</strong> </p>
+<ul>
+<li><code>http://xx.com/api/user/register</code></li>
+</ul>
+<p><strong>请求方式：</strong></p>
+<ul>
+<li>POST </li>
+</ul>
+<p><strong>参数：</strong> </p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">参数名</th>
+<th style="text-align: left;">必选</th>
+<th style="text-align: left;">类型</th>
+<th>说明</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">cmd_code</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">string</td>
+<td>命令码</td>
+<td>-----</td>
+</tr>
+<tr>
+<td style="text-align: left;">user_name</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">string</td>
+<td>用户名</td>
+<td>-----</td>
+</tr>
+<tr>
+<td style="text-align: left;">password</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">string</td>
+<td>密码</td>
+<td>-----</td>
+</tr>
+<tr>
+<td style="text-align: left;">name</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;">string</td>
+<td>用户名称</td>
+<td>-----</td>
+</tr>
+<tr>
+<td style="text-align: left;">phone_num</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">string</td>
+<td>手机号</td>
+<td>-----</td>
+</tr>
+</tbody>
+</table>
+<p><strong>返回示例</strong></p>
+<pre><code>  {
+    &quot;error_code&quot;: 0,
+    &quot;message&quot;:&quot;&quot;,
+  }</code></pre>
+<p><strong>备注</strong> </p>
+<ul>
+<li>更多返回错误代码请看首页的错误代码描述</li>
+</ul></div><h2>5.2、获取手机验证码</h2><div style="margin-left:20px;"><p><strong>简要描述：</strong> </p>
+<ul>
+<li>获取手机验证码</li>
+</ul>
+<p><strong>请求URL：</strong> </p>
+<ul>
+<li><code>http://xx.com/api/user/register</code></li>
+</ul>
+<p><strong>请求方式：</strong></p>
+<ul>
+<li>POST </li>
+</ul>
+<p><strong>参数：</strong> </p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">参数名</th>
+<th style="text-align: left;">必选</th>
+<th style="text-align: left;">类型</th>
+<th>说明</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">cmd_code</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">string</td>
+<td>命令码</td>
+<td>-----</td>
+</tr>
+<tr>
+<td style="text-align: left;">phone_num</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">string</td>
+<td>手机号</td>
+<td>-----</td>
+</tr>
+</tbody>
+</table>
+<p><strong>返回示例</strong></p>
+<pre><code class="language-json">  {
+    &quot;error_code&quot;: 0,
+    &quot; message &quot;: &quot;&quot;,
+    &quot;ver_code&quot;: &quot;123456&quot;
+  }</code></pre>
+<p><strong>返回参数说明</strong> </p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">参数名</th>
+<th style="text-align: left;">类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ver_code</td>
+<td style="text-align: left;">string</td>
+<td>验证码</td>
+</tr>
+</tbody>
+</table>
+<p><strong>备注</strong> </p>
+<ul>
+<li>更多返回错误代码请看首页的错误代码描述</li>
+</ul></div><h2>5.3、登录</h2><div style="margin-left:20px;"><p><strong>简要描述：</strong> </p>
+<ul>
+<li>用户登录接口</li>
+</ul>
+<p><strong>请求URL：</strong> </p>
+<ul>
+<li><code>http://xx.com/api/user/register</code></li>
+</ul>
+<p><strong>请求方式：</strong></p>
+<ul>
+<li>POST </li>
+</ul>
+<p><strong>参数：</strong> </p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">参数名</th>
+<th style="text-align: left;">必选</th>
+<th style="text-align: left;">类型</th>
+<th>说明</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">cmd_code</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">string</td>
+<td>命令码</td>
+<td>-----</td>
+</tr>
+<tr>
+<td style="text-align: left;">account_name</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">string</td>
+<td>用户名</td>
+<td>-----</td>
+</tr>
+<tr>
+<td style="text-align: left;">password</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">string</td>
+<td>密码</td>
+<td>-----</td>
+</tr>
+</tbody>
+</table>
+<p><strong>返回示例</strong></p>
+<pre><code class="language-json">  {
+    &quot;error_code&quot;: 0,
+    &quot;message&quot; : &quot;&quot;, 
+    &quot;user_data&quot;: {
+        &quot;name&quot;: &quot;利仕用户&quot;,
+        &quot;phone_num&quot;: &quot;13878767882&quot; ,
+        &quot;user_head_img&quot;: &quot;1436864169.png&quot;,
+        &quot;last_login_time&quot;: &quot;0&quot;,
+    },
+     &quot;token&quot; : &quot;134971e77bae2671e60abdd357525c73&quot; 
+  }</code></pre>
+<p><strong>返回参数说明</strong> </p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">参数名</th>
+<th style="text-align: left;">类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">name</td>
+<td style="text-align: left;">string</td>
+<td>用户名称</td>
+</tr>
+<tr>
+<td style="text-align: left;">phone_num</td>
+<td style="text-align: left;">string</td>
+<td>电话号码</td>
+</tr>
+<tr>
+<td style="text-align: left;">user_head_img</td>
+<td style="text-align: left;">string</td>
+<td>用户头像</td>
+</tr>
+</tbody>
+</table>
+<p><strong>备注</strong> </p>
+<ul>
+<li>更多返回错误代码请看首页的错误代码描述</li>
+</ul></div><h2>5.4、修改密码</h2><div style="margin-left:20px;"><p><strong>简要描述：</strong> </p>
+<ul>
+<li>修改密码接口</li>
+</ul>
+<p><strong>请求URL：</strong> </p>
+<ul>
+<li><code>http://xx.com/api/user/register</code></li>
+</ul>
+<p><strong>请求方式：</strong></p>
+<ul>
+<li>POST </li>
+</ul>
+<p><strong>参数：</strong> </p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">参数名</th>
+<th style="text-align: left;">必选</th>
+<th style="text-align: left;">类型</th>
+<th>说明</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">username</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">string</td>
+<td>用户名</td>
+<td>-----</td>
+</tr>
+<tr>
+<td style="text-align: left;">old_password</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">string</td>
+<td>旧密码</td>
+<td>-----</td>
+</tr>
+<tr>
+<td style="text-align: left;">new_password</td>
+<td style="text-align: left;">否</td>
+<td style="text-align: left;">string</td>
+<td>新密码</td>
+<td>-----</td>
+</tr>
+</tbody>
+</table>
+<p><strong>返回示例</strong></p>
+<pre><code>  {
+    &quot;error_code&quot;: 0,
+    &quot;message&quot;: &quot;&quot;
+  }</code></pre>
+<p><strong>备注</strong> </p>
+<ul>
+<li>更多返回错误代码请看首页的错误代码描述</li>
+</ul></div><h2>5.5、找回密码</h2><div style="margin-left:20px;"><p><strong>简要描述：</strong> </p>
+<ul>
+<li>找回密码接口</li>
+</ul>
+<p><strong>请求URL：</strong> </p>
+<ul>
+<li><code>http://xx.com/api/user/register</code></li>
+</ul>
+<p><strong>请求方式：</strong></p>
+<ul>
+<li>POST </li>
+</ul>
+<p><strong>参数：</strong> </p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">参数名</th>
+<th style="text-align: left;">必选</th>
+<th style="text-align: left;">类型</th>
+<th>说明</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">cmd_code</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">string</td>
+<td>命令码</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align: left;">account_name</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">string</td>
+<td>用户名</td>
+<td>-----</td>
+</tr>
+<tr>
+<td style="text-align: left;">phone_num</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">string</td>
+<td>手机号</td>
+<td>-----</td>
+</tr>
+<tr>
+<td style="text-align: left;">ver_num</td>
+<td style="text-align: left;">是</td>
+<td style="text-align: left;">string</td>
+<td>验证码</td>
+<td>-----</td>
+</tr>
+</tbody>
+</table>
+<p><strong>返回示例</strong></p>
+<pre><code>  {
+    &quot;error_code&quot;: 0,
+    &quot;message&quot;: &quot;&quot;
+  }</code></pre>
+<p><strong>备注</strong> </p>
+<ul>
+<li>更多返回错误代码请看首页的错误代码描述</li>
+</ul></div></div></body></html>
